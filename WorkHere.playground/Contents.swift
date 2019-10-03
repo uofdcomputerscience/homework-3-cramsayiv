@@ -1,4 +1,6 @@
 import Foundation
+import UIKit
+import PlaygroundSupport
 
 // This homework should be fairly simple.
 // visit https://github.com/noops-challenge/wordbot to read
@@ -10,6 +12,12 @@ import Foundation
 // decode those 50 words into an array of strings
 // print the array of words, but with each word reversed
 // print the average number of characters per word
+
+PlaygroundPage.current.needsIndefiniteExecution = true
+
+struct Words: Codable {
+  let names: [String]
+}
 
 func reversedList (myList: [String]) -> [String] {
     var reversedList = [String] ()
